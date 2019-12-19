@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
 })
 
 //Connecting the PATH way to our suvery.html file
-router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public.survey.html"))
-})
+// router.get('/survey', (req, res) => {
+//     res.sendFile(path.join(__dirname, "../public/survey.html"))
+// })
 
 
 
