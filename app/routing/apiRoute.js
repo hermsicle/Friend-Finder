@@ -17,7 +17,7 @@ let friends = [
 ]
 
 //uses the GET method to retrieve data from our API
-router.get('/', (req, res) => {
+router.get('/friends', (req, res) => {
     console.log('Our Server has been hit!')
     res.send(friends)
 })
