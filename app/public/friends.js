@@ -8,6 +8,13 @@ submitForm = () => {
         let name = $('#name').val();
         let image = $('#image-link').val();
 
+        let formVals = $('form').serializeArray()
+        console.log(formVals)
+
+        let formVal
+
         console.log(name, image)
     })
 }
+
+
