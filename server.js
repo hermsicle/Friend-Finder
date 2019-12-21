@@ -15,9 +15,8 @@ const htmlRoute = require('./app/routing/htmlRoute');
 app.use('/', htmlRoute);
 
 
+
 //Connecting app to the PORT with listen method:
 app.listen(PORT, () => {
     console.log(`You are connected to port: http://localhost:${PORT}`)
 })
-
-
