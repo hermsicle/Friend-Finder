@@ -1,15 +1,6 @@
 $(document).ready(function () {
     //submitForm();
 })
-
-// $.ajax({
-//     type: 'POST',
-//     url: 'api/friends'
-// }).then(res => {
-//     console.log(res)
-// })
-
-//submitForm = () => {
 $('#submit').on('click', function (e) {
     e.preventDefault();
     let name = $('#name').val();
@@ -20,15 +11,16 @@ $('#submit').on('click', function (e) {
     let formVals = $('form').serializeArray()
     for (let i = 0; i < formVals.length; i++) {
         //console.log(formVals[i].value)
-        formData.push(formVals[i].value)
+        formData.push(parseInt(formVals[i].value = 1))
     }
+    console.log(formData)
 
     const newUser = {
         name: name,
         photo: image,
         scores: formData
     }
-    //console.log(newUser)
+    console.log(newUser)
 
     $.ajax({
         type: 'POST',
@@ -36,8 +28,8 @@ $('#submit').on('click', function (e) {
         data: newUser
     }).then(res => {
         console.log(res);
+
     })
 })
-//}
 
-
+//create a function that shows user information:
