@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.port || 2888;
+const PORT = process.env.PORT || 2888;
+
+
 
 //Middleware:
 app.use(express.urlencoded({ extended: true }));
