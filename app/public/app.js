@@ -11,7 +11,7 @@ $('#submit').on('click', function (e) {
     let formVals = $('form').serializeArray()
     for (let i = 0; i < formVals.length; i++) {
         //console.log(formVals[i].value)
-        formData.push(parseInt(formVals[i].value = 1))
+        formData.push(formVals[i].value = 1)
     }
     console.log(formData)
 

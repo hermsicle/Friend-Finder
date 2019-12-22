@@ -12,7 +12,7 @@ router.get('/friends', (req, res) => {
 router.post('/friends', (req, res) => {
     let newUser = req.body;
     //console.log(newUser);
-    let userScore = [];
+
     for (let i = 0; i < newUser.scores.length; i++) {
 
     }
