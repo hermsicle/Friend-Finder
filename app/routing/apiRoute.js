@@ -28,6 +28,7 @@ router.post('/friends', (req, res) => {
             // console.log(newUser.scores);
             console.log(newData)
             console.log(newUser.scores)
+
         }
     }
 
