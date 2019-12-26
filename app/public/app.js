@@ -11,9 +11,9 @@ $('#submit').on('click', function (e) {
     let formVals = $('form').serializeArray()
     for (let i = 0; i < formVals.length; i++) {
         //console.log(formVals[i].value)
-        formData.push(formVals[i].value = 1)
+        formData.push(formVals[i].value)
     }
-    console.log(formData)
+    // console.log(formData)
 
     const newUser = {
         name: name,
@@ -27,7 +27,7 @@ $('#submit').on('click', function (e) {
         url: '/api/friends',
         data: newUser
     }).then(res => {
-        console.log(res);
+        //console.log(res);
 
     })
 })
