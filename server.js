@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("./app/public"))
 
+
 //importing our apiRoute & htmlRoute through reqire:
 const apiRoute = require('./app/routing/apiRoute');
 app.use('/api', apiRoute);

@@ -34,11 +34,13 @@ $('#submit').on('click', function (e) {
         let currentURL = window.location.origin;
 
         // Ajax call for receiving response after POST req
-        $.post(currentURL + "/api/friends", newUser, function (data) {
-            $("#bestFriend").text(data.friends.name);
-            $("#bestFriendPhoto").attr("src", data.friends.photo);
-            $("#bestFriendModal").modal("toggle");
-        });
+        $.ajax({
+            type: 'POST',
+            url: '/api/friends',
+            data: newUser
+        }).then(res => {
+            console.log(res)
+        })
     } else {
         // If a required field is missing, show alert
         alert("Survey is incomplete!");

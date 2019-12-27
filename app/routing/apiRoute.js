@@ -18,7 +18,7 @@ router.post('/friends', (req, res) => {
     //parseInt for the scores
     for (let i = 0; i < newUser.scores.length; i++) {
         newUser.scores[i] = parseInt(newUser.scores[i])
-        console.log(newUser.scores[i])
+        //console.log(newUser.scores[i])
     }
 
     //Default friend match is the first friend but the result will be whoever has the minimum differences in scores
